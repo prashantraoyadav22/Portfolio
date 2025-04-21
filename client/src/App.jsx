@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     // Always show splash on page load
     setShowSplash(true);
-    const timer = setTimeout(() => setShowSplash(false), 7000);
+    const timer = setTimeout(() => setShowSplash(false), 7500);
     return () => clearTimeout(timer);
   }, [location.key]);
 

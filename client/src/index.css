@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-
+/*Splash Load bar*/
 @keyframes loadBar {
   0% {
     width: 0%;
@@ -11,7 +11,7 @@
 }
 
 .animate-load-bar {
-  animation: loadBar 7s ease forwards;
+  animation: loadBar 7.5s ease-in-out forwards;
 }
 
 

@@ -6,13 +6,13 @@ const Splash = ({ onFinish }) => {
   useEffect(() => {
     const timers = [
       setTimeout(() => setStage(1), 250),
-      setTimeout(() => setStage(2), 2000),
-      setTimeout(() => setStage(3), 4000),
-      setTimeout(() => setStage(4), 5000),
+      setTimeout(() => setStage(2), 1750),
+      setTimeout(() => setStage(3), 3500),
+      setTimeout(() => setStage(4), 6000),
       setTimeout(() => {
         setStage(5);
         onFinish();
-      }, 10000),
+      }, 7500),
     ];
     return () => timers.forEach(clearTimeout);
   }, [onFinish]);
@@ -33,13 +33,14 @@ const Splash = ({ onFinish }) => {
 
       {/* Designation */}
       <div
-        className={`text-2xl md:text-4xl font-medium absolute transition-all duration-2000 ease-in-out
-        ${stage === 3 ? "scale-100 opacity-100" : ""}
-        ${stage === 4 ? "scale-5000 opacity-0" : ""}
-        ${stage < 3 || stage >= 5 ? "hidden" : ""}
+        className={`text-2xl md:text-4xl font-medium absolute transition-all duration-2250 ease-in-out
+        ${stage === 2 ? "opacity-0" : ""}
+        ${stage === 3 ? "translate-y-0 opacity-100" : ""}
+        ${stage === 4 ? "translate-y-[300%] opacity-0" : ""}
+        ${stage < 2 || stage >= 5 ? "hidden" : ""}
         `}
       >
-        Full Stack <span className="text-blue-500">Developer</span>
+        Software <span className="text-blue-500">Developer</span>
       </div>
 
       {/* Loading Bar */}

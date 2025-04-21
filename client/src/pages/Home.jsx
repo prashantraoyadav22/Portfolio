@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2 }}
+      // initial={{ opacity: 0 }}
+      // animate={{ opacity: 1 }}
+      transition={{ duration: 3 }}
       className="min-h-screen bg-black text-white"
     >
       {/* Your actual home content */}
@@ -18,6 +18,30 @@ export default function Home() {
           <p className="text-lg md:text-xl max-w-2xl">
             I'm a passionate full-stack developer who loves building modern,
             fast and beautiful web apps with MERN stack.
+            lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Donec euismod, nisl eget consectetur sagittis, nisl nunc
+            lorem x10 dolor sit amet, consectetur adipiscing elit.
+            Donec euismod, nisl eget consectetur sagittis, nisl nunc
+            lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur sagittis, nisl nunc
+            lorem x10 dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur sagittis, nisl nunclorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Donec euismod, nisl eget consectetur sagittis, nisl nunc
+            lorem x10 dolor sit amet, consectetur adipiscing elit.
+            Donec euismod, nisl eget consectetur sagittis, nisl nunclorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Donec euismod, nisl eget consectetur sagittis, nisl nunc
+            lorem x10 dolor sit amet, consectetur adipiscing elit.
+            Donec euismod, nisl eget consectetur sagittis, nisl nunclorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Donec euismod, nisl eget consectetur sagittis, nisl nunc
+            lorem x10 dolor sit amet, consectetur adipiscing elit.
+            Donec euismod, nisl eget consectetur sagittis, nisl nunclorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Donec euismod, nisl eget consectetur sagittis, nisl nunc
+            lorem x10 dolor sit amet, consectetur adipiscing elit.
+            Donec euismod, nisl eget consectetur sagittis, nisl nunclorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Donec euismod, nisl eget consectetur sagittis, nisl nunc
+            lorem x10 dolor sit amet, consectetur adipiscing elit.
+            Donec euismod, nisl eget consectetur sagittis, nisl nunclorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Donec euismod, nisl eget consectetur sagittis, nisl nunc
+            lorem x10 dolor sit amet, consectetur adipiscing elit.
+            Donec euismod, nisl eget consectetur sagittis, nisl nunc
           </p> 
         </main>
       </div>

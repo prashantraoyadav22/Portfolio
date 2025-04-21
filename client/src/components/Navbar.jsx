@@ -15,16 +15,19 @@ const Navbar = () => {
   const scrollDir = useScrollDirection();
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowNavbar(true), 3000); // after splash
+    const timer = setTimeout(() => setShowNavbar(true), 0); // after splash
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <nav
-      className={`flex top-2 justify-center-safe rounded-4xl z-10 shadow-md transition-transform duration-500 ${
-        scrollDir === "down" ? "-translate-y-full" : "translate-y-0"
-      } ${showNavbar ? "opacity-100" : "opacity-0 -translate-y-10"}
-      bg-black/30 backdrop-blur-lg border border-white/10 shadow-md`}
+    className={`
+        fixed left-1/2 transform -translate-x-1/2 z-10 w-fit rounded-3xl
+        bg-black/30 backdrop-blur-lg border border-white/10 shadow-md 
+        transition-all duration-1000 ease-in-out
+        ${showNavbar ? "opacity-100 top-4" : "opacity-0 -translate-y-10"}
+        ${showNavbar && scrollDir === "down" ? "-translate-y-full" : ""}
+      `}
     >
       <div className="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
         <ul className="hidden md:flex gap-8 text-sm text-white font-medium">
