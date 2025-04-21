@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+
+@keyframes loadBar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-load-bar {
+  animation: loadBar 7s ease forwards;
+}
+
+
+
+
+
+
