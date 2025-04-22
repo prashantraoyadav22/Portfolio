@@ -12,7 +12,7 @@ const Splash = ({ onFinish }) => {
       setTimeout(() => {
         setStage(5);
         onFinish();
-      }, 7500),
+      }, 7000),
     ];
     return () => timers.forEach(clearTimeout);
   }, [onFinish]);
@@ -45,7 +45,11 @@ const Splash = ({ onFinish }) => {
 
       {/* Loading Bar */}
       {stage < 5 && (
-        <div className="absolute bottom-10 w-full px-8">
+        <div className={`absolute bottom-10 w-full px-8 transition-all duration-3500 ease-in-out 
+          ${stage === 3 ? "translate-y-0 opacity-100" : ""}
+          ${stage === 4 ? "translate-y-[100vh] opacity-0" : ""}
+          ${stage < 1 || stage >= 5 ? "hidden" : ""}
+        `}>
           <div className="w-full h-1 bg-gray-700 relative overflow-hidden rounded-full">
             <div className="absolute left-1/2 -translate-x-1/2 bg-blue-500 h-full animate-load-bar rounded-full" />
           </div>

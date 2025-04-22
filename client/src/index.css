@@ -1,5 +1,11 @@
 @import "tailwindcss";
-
+*{
+  font-family: 'Poppins', sans-serif;
+}
+.custom-line {
+  height: 0.1px;
+  opacity: 0.3;
+}
 /*Splash Load bar*/
 @keyframes loadBar {
   0% {
@@ -7,11 +13,12 @@
   }
   100% {
     width: 100%;
+    
   }
 }
 
 .animate-load-bar {
-  animation: loadBar 7.5s ease-in-out forwards;
+  animation: loadBar 6.8s ease-in-out forwards ;
 }
 
 

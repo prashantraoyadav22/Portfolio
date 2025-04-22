@@ -15,7 +15,7 @@ const Navbar = () => {
   const scrollDir = useScrollDirection();
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowNavbar(true), 0); // after splash
+    const timer = setTimeout(() => setShowNavbar(true), 100); // after splash
     return () => clearTimeout(timer);
   }, []);
 
@@ -29,8 +29,8 @@ const Navbar = () => {
         ${showNavbar && scrollDir === "down" ? "-translate-y-full" : ""}
       `}
     >
-      <div className="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
-        <ul className="hidden md:flex gap-8 text-sm text-white font-medium">
+      <div className="max-w-6xl mx-auto px-9 py-3 flex justify-between items-center">
+        <ul className="hidden md:flex gap-8 text-md text-white font-medium">
           {navItems.map((item) => (
             <li key={item.id}>
               <Link
