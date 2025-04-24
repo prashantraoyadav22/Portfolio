@@ -34,9 +34,9 @@ const colorMap = {
     text: "text-purple-500",
     bg: "bg-purple-500",
     border: "border-purple-500",
-    hoverText: "hover:text-purple-500",
+    hoverText: "hover:text-purple-400",
     hoverBg: "hover:bg-purple-500",
-    hoverBorder: "hover:border-purple-500",
+    hoverBorder: "hover:border-purple-400",
   },
   green: {
     base: "green-500",
@@ -82,7 +82,7 @@ const Button = ({
   icon = null,
   onClick = () => {},
   className = "",
-  color = "orange", // use color key like 'orange', 'blue'
+  color = "purple", // use color key like 'orange', 'blue'
 }) => {
   const styles = colorMap[color] || colorMap.orange;
 

@@ -37,7 +37,7 @@ const Navbar = () => {
                 to={item.id}
                 smooth={true}
                 duration={500}
-                className="cursor-pointer hover:text-orange-400 transition-all"
+                className="cursor-pointer hover:text-purple-400 transition-all"
               >
                 {item.label}
               </Link>
@@ -53,7 +53,7 @@ const Navbar = () => {
                 to={item.id}
                 smooth={true}
                 duration={500}
-                className="cursor-pointer hover:text-orange-400 transition-all"
+                className="cursor-pointer hover:text-purple-400 transition-all"
               >
                 {item.icon}
               </Link>
