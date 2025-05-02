@@ -3,6 +3,7 @@ import { HiOutlineDownload, HiOutlineArrowRight } from "react-icons/hi";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Button from "../common/Button";
+import {Link} from "react-scroll";
 
 const Overview = () => {
     return(
@@ -24,18 +25,22 @@ const Overview = () => {
           full-stack solutions, with a keen interest in Machine Learning and AI to shape the future of tech.
         </p>
         <div className="flex flex-col sm:flex-row items-center gap-4 mb-8">
-          <Button
+          <Link to="project"><Button
             text="See My Projects"
             icon={<HiOutlineArrowRight />}
             variant="filled"
             color="purple"
-          />
-          <Button
+            
+          /></Link>
+          <a
+  href="/resume.pdf"
+  download="Prashant_Yadav_SDE_Resume.pdf"
+><Button
             text="Download Resume"
             icon={<HiOutlineDownload />}
             variant="outlined"
             color="purple"
-          />
+          /></a>
         </div>
       </motion.div>
       <motion.div

@@ -18,7 +18,7 @@ const Home = () => {
       </section>
       <section
         id="techstack"
-        className="bg-black text-white min-h-screen flex flex-col items-center justify-end-safe "
+        className="bg-black text-white min-h-screen flex flex-col items-center justify-end-safe pt-6 "
       >
         <TechStack />
       </section>

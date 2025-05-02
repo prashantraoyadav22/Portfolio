@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import ExperienceCard from "../common/card/ExperienceCard"; // make sure path is correct
-import timelineData from "../../../public/javaScript/timelineData"; // your experience data
+import timelineData from "../../../src/assets/timelineData"; // your experience data
 
 const Timeline = () => {
   const timelineRef = useRef(null);
@@ -22,7 +22,7 @@ const Timeline = () => {
   }, []);
 
   return (
-    <div className="relative px-40 md:px-40 w-full flex flex-col items-center mt-10">
+    <div className="relative px-4 md:px-40 w-full flex flex-col items-center mt-10">
       {/* Vertical Line */}
       <div
         ref={timelineRef}
@@ -31,7 +31,7 @@ const Timeline = () => {
           left: "50%",
           transform: "translateX(-50%)",
           height: `${lineHeight * 0.85}%`,
-          transition: "height 2s ease-in-out",
+          transition: "height 3s ease-in-out ",
         }}
       />
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const Splash = ({ onFinish }) => {
+const Splash = () => {
   const [stage, setStage] = useState(0);
 
   useEffect(() => {
@@ -11,11 +11,10 @@ const Splash = ({ onFinish }) => {
       setTimeout(() => setStage(4), 6000),
       setTimeout(() => {
         setStage(5);
-        onFinish();
       }, 7000),
     ];
     return () => timers.forEach(clearTimeout);
-  }, [onFinish]);
+  }, []);
 
   return (
     <div className="h-screen w-screen bg-black text-white flex flex-col justify-center items-center relative overflow-hidden">

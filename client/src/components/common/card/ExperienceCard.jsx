@@ -20,8 +20,7 @@ const ExperienceCard = ({ data }) => {
     
     <div
       ref={cardRef}
-      className={`group bg-transparent border border-purple-500/30 rounded-xl p-6 text-white backdrop-blur-sm shadow-md transition-all duration-1000 ease-in-out max-w-md md:max-w-2xl hover:scale-105
-        hover:shadow-lg hover:shadow-purple-500/30 z-50
+      className={`group bg-transparent border border-purple-500/30 rounded-xl p-6 text-white backdrop-blur-sm shadow-md transition-all duration-1000 ease-in-out max-w-md md:max-w-2xl hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30 z-50
         ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
       `}
     >
@@ -34,7 +33,7 @@ const ExperienceCard = ({ data }) => {
         <img
           src={data.logo}
           alt="logo"
-          className="w-10 h-10 object-contain"
+          className="w-10 h-10 rounded-md object-contain"
         />
       </div>
 

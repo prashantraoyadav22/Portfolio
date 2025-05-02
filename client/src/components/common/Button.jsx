@@ -87,7 +87,7 @@ const Button = ({
   const styles = colorMap[color] || colorMap.orange;
 
   const baseStyle = `
-    relative group inline-flex items-center justify-center gap-3
+    relative group inline-flex text-xs md:text-sm items-center justify-center gap-3
     px-5 py-3 rounded-full transition-all duration-300
   `;
 

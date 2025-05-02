@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
 import { FaHome, FaUser, FaCode, FaEnvelope } from "react-icons/fa";
-import { Link } from "react-scroll";
 import useScrollDirection from "../hooks/useScrollDirection";
 
 const navItems = [
-  { id: "home", label: "Home", icon: <FaHome /> },
+  { id: "/", label: "Home", icon: <FaHome /> },
   { id: "about", label: "About", icon: <FaUser /> },
-  { id: "projects", label: "Projects", icon: <FaCode /> },
+  { id: "login", label: "Login", icon: <FaCode /> },
   { id: "contact", label: "Contact", icon: <FaEnvelope /> },
 ];
 
@@ -35,10 +36,12 @@ const Navbar = () => {
             <li key={item.id}>
               <Link
                 to={item.id}
-                smooth={true}
+                
+                smooth='true'
                 duration={500}
                 className="cursor-pointer hover:text-purple-400 transition-all"
               >
+                
                 {item.label}
               </Link>
             </li>
@@ -51,7 +54,7 @@ const Navbar = () => {
             <li key={item.id}>
               <Link
                 to={item.id}
-                smooth={true}
+                smooth='true'
                 duration={500}
                 className="cursor-pointer hover:text-purple-400 transition-all"
               >
