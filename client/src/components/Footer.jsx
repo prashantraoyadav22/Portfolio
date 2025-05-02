@@ -3,11 +3,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="w-full -mt-13 bg-transpernt bg-opacity-70 text-gray-400 text-center py-4 text-sm">
-      © 2025 | All rights reserved. Designed & Developed by  Prashant Yadav.
-    <Link to="/login" className="text-blue-500 hover:underline">
-      Admin Login
-    </Link>
+    <footer className="w-full flex flex-wrap justify-center -mt-13 bg-transpernt bg-opacity-70 text-gray-400 text-center py-4 text-sm">
+      <div>© 2025 | All rights reserved.</div><div> Designed & Developed by  Prashant Yadav.</div>
     </footer>
   );
 };

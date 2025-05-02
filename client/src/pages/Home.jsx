@@ -2,7 +2,7 @@ import React from "react";
 import Overview from "../components/sections/Overview";
 import Experience from "../components/sections/Experience";
 import Project from "../components/sections/Project";
-// import Certificates from "../components/sections/Other";
+import Other from "../components/sections/Other";
 import TechStack from "../components/sections/TechStack";
 import SectionNav from "../components/sections/SectionNav";
 
@@ -36,9 +36,9 @@ const Home = () => {
       </section>
       <section
         id="other"
-        className="bg-black text-white min-h-screen flex flex-col items-center justify-end-safe "
+        className="bg-black text-white min-h-screen flex flex-col items-center justify-center "
       >
-        {/* <Other /> */}
+        <Other />
       </section>
       
     </>
